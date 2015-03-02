@@ -1,0 +1,20 @@
+\\clg.priv\ens\el\9\201037629\mes documents\visual studio 2013\Projects\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Tp02BaseDonnees.exe.config
+\\clg.priv\ens\el\9\201037629\mes documents\visual studio 2013\Projects\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Tp02BaseDonnees.exe
+\\clg.priv\ens\el\9\201037629\mes documents\visual studio 2013\Projects\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Tp02BaseDonnees.pdb
+\\clg.priv\ens\el\9\201037629\mes documents\visual studio 2013\Projects\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.csprojResolveAssemblyReference.cache
+\\clg.priv\ens\el\9\201037629\mes documents\visual studio 2013\Projects\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Form1.resources
+\\clg.priv\ens\el\9\201037629\mes documents\visual studio 2013\Projects\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Properties.Resources.resources
+\\clg.priv\ens\el\9\201037629\mes documents\visual studio 2013\Projects\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.csproj.GenerateResource.Cache
+\\clg.priv\ens\el\9\201037629\mes documents\visual studio 2013\Projects\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.exe
+\\clg.priv\ens\el\9\201037629\mes documents\visual studio 2013\Projects\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.pdb
+\\clg.priv\ens\El\9\201037629\Mes documents\Visual Studio 2013\Projects\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Oracle.DataAccess.dll
+C:\Users\201037629\Desktop\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Tp02BaseDonnees.exe.config
+C:\Users\201037629\Desktop\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.exe
+C:\Users\201037629\Desktop\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.pdb
+C:\Users\201037629\Desktop\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Tp02BaseDonnees.exe
+C:\Users\201037629\Desktop\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Tp02BaseDonnees.pdb
+C:\Users\201037629\Desktop\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Oracle.DataAccess.dll
+C:\Users\201037629\Desktop\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.csprojResolveAssemblyReference.cache
+C:\Users\201037629\Desktop\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Form1.resources
+C:\Users\201037629\Desktop\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Properties.Resources.resources
+C:\Users\201037629\Desktop\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.csproj.GenerateResource.Cache
