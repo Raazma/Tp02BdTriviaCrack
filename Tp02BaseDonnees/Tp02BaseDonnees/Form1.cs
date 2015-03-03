@@ -34,16 +34,13 @@ namespace Tp02BaseDonnees
          {
             oraconn.ConnectionString = chainedeconnexion;
             oraconn.Open();
-
           
          }
          catch (Exception ex)
          {
             MessageBox.Show(ex.ToString());
 
-         }      
-      
-      
+         }                 
       }
 
       private void StartingState()
@@ -57,34 +54,29 @@ namespace Tp02BaseDonnees
       private void Btn_Enregistrer_Click(object sender, EventArgs e)
       {
        
-
          Insertion();
-
-
-
-
       }
       private void Insertion()
       {
-         //OracleCommand com = new OracleCommand("Insert", oraconn);
-         //com.CommandType = CommandType.StoredProcedure;
-         //com.CommandText = "GESTIONQUESTION.INSERTION";
+          OracleCommand com = new OracleCommand("Insert", oraconn);
+          com.CommandType = CommandType.StoredProcedure;
+          com.CommandText = "GESTIONQUESTION.INSERTION";
 
-         //OracleParameter numQ =  new OracleParameter("numQ",OracleDbType.Char,8);
-         //numQ.Direction = ParameterDirection.Input;
+          OracleParameter numQ = new OracleParameter("numQ", OracleDbType.Char, 8);
+          numQ.Direction = ParameterDirection.Input;
 
-         //OracleParameter enoncer = new OracleParameter("Question",OracleDbType.Varchar2,80);
-         //enoncer.Direction = ParameterDirection.Input;
-         //enoncer.Value = Tb_Question.Text;
+          OracleParameter enoncer = new OracleParameter("Question", OracleDbType.Varchar2, 80);
+          enoncer.Direction = ParameterDirection.Input;
+          enoncer.Value = Tb_Question.Text;
 
-         //OracleParameter CodeCat = new OracleParameter("codecat",OracleDbType.Char,1);
-         //CodeCat.Direction = ParameterDirection.Input;
+          OracleParameter CodeCat = new OracleParameter("codecat", OracleDbType.Char, 1);
+          CodeCat.Direction = ParameterDirection.Input;
 
-         MessageBox.Show(CountnbQuestion('V').ToString());
+         MessageBox.Show(CountnbQuestion('B').ToString());
 
       }
      
-      private int CountnbQuestion(Char code)
+      private int CountnbQuestion(char code)
       {
 
          try
@@ -97,19 +89,20 @@ namespace Tp02BaseDonnees
             nb.Direction = ParameterDirection.ReturnValue;
             com.Parameters.Add(nb);
 
-            OracleParameter lecode = new OracleParameter("codee", OracleDbType.Char, 1);
+            OracleParameter lecode = new OracleParameter("code", OracleDbType.Char, 1);
             lecode.Direction = ParameterDirection.Input;
             lecode.Value = code;
             com.Parameters.Add(lecode);
             com.ExecuteNonQuery();
-            return int.Parse(nb.ToString());
+           
+            return int.Parse(nb.Value.ToString());
          }
          catch (Exception e)
          {
             MessageBox.Show(e.ToString());
          
          }
-         return 1;
+         return -1;
       
       }
 
