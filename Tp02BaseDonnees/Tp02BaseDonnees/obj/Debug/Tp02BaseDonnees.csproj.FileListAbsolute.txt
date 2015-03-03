@@ -27,3 +27,13 @@ C:\Users\Razma\Documents\C#\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\ob
 C:\Users\Razma\Documents\C#\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Form1.resources
 C:\Users\Razma\Documents\C#\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Properties.Resources.resources
 C:\Users\Razma\Documents\C#\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.csproj.GenerateResource.Cache
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Tp02BaseDonnees.exe.config
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.exe
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.pdb
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Tp02BaseDonnees.exe
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Tp02BaseDonnees.pdb
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Oracle.DataAccess.dll
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.csprojResolveAssemblyReference.cache
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Form1.resources
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Properties.Resources.resources
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.csproj.GenerateResource.Cache

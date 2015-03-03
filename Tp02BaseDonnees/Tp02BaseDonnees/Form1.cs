@@ -45,38 +45,113 @@ namespace Tp02BaseDonnees
 
       private void StartingState()
       {
-
          Cb_Categories.SelectedIndex = 0;
-         Cb_Rep.SelectedIndex = 0;
-                             
+         Cb_Rep.SelectedIndex = 0;                            
       }
 
       private void Btn_Enregistrer_Click(object sender, EventArgs e)
-      {
-       
+      {      
          Insertion();
       }
       private void Insertion()
       {
-          OracleCommand com = new OracleCommand("Insert", oraconn);
-          com.CommandType = CommandType.StoredProcedure;
-          com.CommandText = "GESTIONQUESTION.INSERTION";
+         OracleCommand com = new OracleCommand("Insert", oraconn);
+         com.CommandType = CommandType.StoredProcedure;
+         com.CommandText = "GESTIONQUESTION.INSERTION";
 
-          OracleParameter numQ = new OracleParameter("numQ", OracleDbType.Char, 8);
-          numQ.Direction = ParameterDirection.Input;
+         OracleParameter numQ = new OracleParameter("numQ", OracleDbType.Char, 8);
+         numQ.Direction = ParameterDirection.Input;
+         String CodeQ = FormatedString();
+         numQ.Value = CodeQ;
+         OracleParameter enoncer = new OracleParameter("Question", OracleDbType.Varchar2, 80);
+         enoncer.Direction = ParameterDirection.Input;
+         enoncer.Value = Tb_Question.Text;
 
-          OracleParameter enoncer = new OracleParameter("Question", OracleDbType.Varchar2, 80);
-          enoncer.Direction = ParameterDirection.Input;
-          enoncer.Value = Tb_Question.Text;
+         OracleParameter CodeCat = new OracleParameter("codecat", OracleDbType.Char, 1);
+         CodeCat.Direction = ParameterDirection.Input;
+         CodeCat.Value = ReadCodeCat();
 
-          OracleParameter CodeCat = new OracleParameter("codecat", OracleDbType.Char, 1);
-          CodeCat.Direction = ParameterDirection.Input;
+         com.Parameters.Add(numQ);
+         com.Parameters.Add(enoncer);
+         com.Parameters.Add(CodeCat);
+         com.ExecuteNonQuery();
 
-         MessageBox.Show(CountnbQuestion('B').ToString());
+         InsertRep(CodeQ);       
+      }
+
+      private void InsertRep(String Code)
+      {
+
+         OracleCommand com = new OracleCommand("Insert", oraconn);
+         com.CommandType = CommandType.StoredProcedure;
+         com.CommandText = "GESTIONQUESTION.InsertRep";
+
+         OracleParameter NumRep = new OracleParameter("numRep",OracleDbType.Char,8);
+         NumRep.Direction = ParameterDirection.Input;
+         NumRep.Value = Code + 'A';
+
+         OracleParameter Descrip = new OracleParameter("descri", OracleDbType.Varchar2,60);
+         Descrip.Direction = ParameterDirection.Input;
+         Descrip.Value = Tb_A.Text;
+         
+        OracleParameter Flag = new OracleParameter("leflag",OracleDbType.Char,1);
+        Flag.Direction = ParameterDirection.Input;
+        Flag.Value = CreateFlag("A");
+
+         OracleParameter codeq = new OracleParameter("codeq", OracleDbType.Char, 8);
+         codeq.Direction = ParameterDirection.Input;
+         codeq.Value = Code;
+
+         com.Parameters.Add(NumRep);
+         com.Parameters.Add(Descrip);
+         com.Parameters.Add(Flag);
+         com.Parameters.Add(codeq);
+
+         com.ExecuteNonQuery();
+
+         NumRep.Value = Code + 'B';
+         Descrip.Value = Tb_B.Text;
+         Flag.Value = CreateFlag("B");
+         com.ExecuteNonQuery();
+
+         NumRep.Value = Code + 'C';
+         Descrip.Value = Tb_C.Text;
+         Flag.Value = CreateFlag("C");
+         com.ExecuteNonQuery();
+
+         NumRep.Value = Code + 'D';
+         Descrip.Value = Tb_D.Text;
+         Flag.Value = CreateFlag("D");
+         com.ExecuteNonQuery();
 
       }
+
+      private char CreateFlag(String letter)
+      {
+         return (letter == Cb_Rep.SelectedItem.ToString()) ? 'V' : 'F';      
      
-      private int CountnbQuestion(char code)
+      }
+      private String FormatedString()
+      {
+
+         return ReadCodeCat() + (CountnbQuestion(ReadCodeCat()) + 1).ToString();
+             
+      }
+      private String ReadCodeCat()
+      {
+         String Query = "Select CodeCategorie from Categorie where NomCategorie = '" + Cb_Categories.SelectedItem.ToString() + "'";
+         OracleCommand comm = new OracleCommand(Query, oraconn);
+         OracleDataReader reader = comm.ExecuteReader();
+         String Data = "";
+
+         while(reader.Read())
+         {
+         Data = reader.GetString(0);          
+         }
+
+         return Data;
+      }
+      private int CountnbQuestion(String code)
       {
 
          try
