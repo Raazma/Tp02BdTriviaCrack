@@ -37,3 +37,5 @@ C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Form1.resources
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Properties.Resources.resources
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.csproj.GenerateResource.Cache
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Jeu.resources
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Menu.resources
