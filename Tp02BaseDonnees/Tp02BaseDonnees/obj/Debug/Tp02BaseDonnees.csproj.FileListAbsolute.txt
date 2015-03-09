@@ -39,3 +39,6 @@ C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.csproj.GenerateResource.Cache
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Jeu.resources
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Menu.resources
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.AliasForm.resources
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.CompteExistant.resources
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.RepondreForm.resources

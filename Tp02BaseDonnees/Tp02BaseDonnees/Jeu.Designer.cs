@@ -29,9 +29,9 @@
       private void InitializeComponent()
       {
          this.Btn_Spin = new System.Windows.Forms.Button();
-         this.panel1 = new System.Windows.Forms.Panel();
-         this.label1 = new System.Windows.Forms.Label();
-         this.label2 = new System.Windows.Forms.Label();
+         this.Pn_Color = new System.Windows.Forms.Panel();
+         this.Lb_NomCat = new System.Windows.Forms.Label();
+         this.Lb_Nom = new System.Windows.Forms.Label();
          this.SuspendLayout();
          // 
          // Btn_Spin
@@ -45,32 +45,32 @@
          this.Btn_Spin.Text = "SPIN";
          this.Btn_Spin.UseVisualStyleBackColor = true;
          // 
-         // panel1
+         // Pn_Color
          // 
-         this.panel1.Location = new System.Drawing.Point(103, 140);
-         this.panel1.Name = "panel1";
-         this.panel1.Size = new System.Drawing.Size(200, 100);
-         this.panel1.TabIndex = 9;
+         this.Pn_Color.Location = new System.Drawing.Point(103, 140);
+         this.Pn_Color.Name = "Pn_Color";
+         this.Pn_Color.Size = new System.Drawing.Size(200, 100);
+         this.Pn_Color.TabIndex = 9;
          // 
-         // label1
+         // Lb_NomCat
          // 
-         this.label1.AutoSize = true;
-         this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label1.Location = new System.Drawing.Point(131, 285);
-         this.label1.Name = "label1";
-         this.label1.Size = new System.Drawing.Size(133, 24);
-         this.label1.TabIndex = 10;
-         this.label1.Text = "AnonymOUSS";
+         this.Lb_NomCat.AutoSize = true;
+         this.Lb_NomCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.Lb_NomCat.Location = new System.Drawing.Point(131, 285);
+         this.Lb_NomCat.Name = "Lb_NomCat";
+         this.Lb_NomCat.Size = new System.Drawing.Size(133, 24);
+         this.Lb_NomCat.TabIndex = 10;
+         this.Lb_NomCat.Text = "AnonymOUSS";
          // 
-         // label2
+         // Lb_Nom
          // 
-         this.label2.AutoSize = true;
-         this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label2.Location = new System.Drawing.Point(99, 67);
-         this.label2.Name = "label2";
-         this.label2.Size = new System.Drawing.Size(207, 24);
-         this.label2.TabIndex = 11;
-         this.label2.Text = "Tour De Joueur JJJJJN";
+         this.Lb_Nom.AutoSize = true;
+         this.Lb_Nom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.Lb_Nom.Location = new System.Drawing.Point(99, 67);
+         this.Lb_Nom.Name = "Lb_Nom";
+         this.Lb_Nom.Size = new System.Drawing.Size(207, 24);
+         this.Lb_Nom.TabIndex = 11;
+         this.Lb_Nom.Text = "Tour De Joueur JJJJJN";
          // 
          // Jeu
          // 
@@ -78,9 +78,9 @@
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.SystemColors.Control;
          this.ClientSize = new System.Drawing.Size(415, 496);
-         this.Controls.Add(this.label2);
-         this.Controls.Add(this.label1);
-         this.Controls.Add(this.panel1);
+         this.Controls.Add(this.Lb_Nom);
+         this.Controls.Add(this.Lb_NomCat);
+         this.Controls.Add(this.Pn_Color);
          this.Controls.Add(this.Btn_Spin);
          this.Name = "Jeu";
          this.Text = "Jeu";
@@ -92,9 +92,9 @@
       #endregion
 
       private System.Windows.Forms.Button Btn_Spin;
-      private System.Windows.Forms.Panel panel1;
-      private System.Windows.Forms.Label label1;
-      private System.Windows.Forms.Label label2;
+      private System.Windows.Forms.Panel Pn_Color;
+      private System.Windows.Forms.Label Lb_NomCat;
+      private System.Windows.Forms.Label Lb_Nom;
 
    }
 }

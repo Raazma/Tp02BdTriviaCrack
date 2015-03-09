@@ -34,7 +34,7 @@
          this.Lb_Alias = new System.Windows.Forms.Label();
          this.Tb_Prenom = new System.Windows.Forms.TextBox();
          this.Lb_renom = new System.Windows.Forms.Label();
-         this.label1 = new System.Windows.Forms.Label();
+         this.Lb_Ident = new System.Windows.Forms.Label();
          this.Btn_Login = new System.Windows.Forms.Button();
          this.Btn_Create = new System.Windows.Forms.Button();
          this.SuspendLayout();
@@ -88,15 +88,15 @@
          this.Lb_renom.TabIndex = 4;
          this.Lb_renom.Text = "Prenom";
          // 
-         // label1
+         // Lb_Ident
          // 
-         this.label1.AutoSize = true;
-         this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label1.Location = new System.Drawing.Point(38, 20);
-         this.label1.Name = "label1";
-         this.label1.Size = new System.Drawing.Size(218, 20);
-         this.label1.TabIndex = 6;
-         this.label1.Text = "Au Joueur J a s\'indentifier";
+         this.Lb_Ident.AutoSize = true;
+         this.Lb_Ident.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.Lb_Ident.Location = new System.Drawing.Point(38, 20);
+         this.Lb_Ident.Name = "Lb_Ident";
+         this.Lb_Ident.Size = new System.Drawing.Size(218, 20);
+         this.Lb_Ident.TabIndex = 6;
+         this.Lb_Ident.Text = "Au Joueur J a s\'indentifier";
          // 
          // Btn_Login
          // 
@@ -125,7 +125,7 @@
          this.ClientSize = new System.Drawing.Size(295, 269);
          this.Controls.Add(this.Btn_Create);
          this.Controls.Add(this.Btn_Login);
-         this.Controls.Add(this.label1);
+         this.Controls.Add(this.Lb_Ident);
          this.Controls.Add(this.Tb_Prenom);
          this.Controls.Add(this.Lb_renom);
          this.Controls.Add(this.Tb_Alias);
@@ -148,7 +148,7 @@
       private System.Windows.Forms.Label Lb_Alias;
       private System.Windows.Forms.TextBox Tb_Prenom;
       private System.Windows.Forms.Label Lb_renom;
-      private System.Windows.Forms.Label label1;
+      private System.Windows.Forms.Label Lb_Ident;
       private System.Windows.Forms.Button Btn_Login;
       private System.Windows.Forms.Button Btn_Create;
    }
