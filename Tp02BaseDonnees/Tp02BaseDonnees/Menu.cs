@@ -27,10 +27,6 @@ namespace Tp02BaseDonnees
       private void SetDefault()
       {
 
-         Pn_Solo.Text = "Solo Joueur";
-         Pn_Two.Text = "2 Joueurs";
-         Pn_Tree.Text = "3 Joueurs";
-         Pn_Four.Text = "4 Joueurs";
 
 
       }

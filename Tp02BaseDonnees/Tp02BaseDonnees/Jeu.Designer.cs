@@ -28,65 +28,73 @@
       /// </summary>
       private void InitializeComponent()
       {
-         this.Pn_1 = new System.Windows.Forms.Panel();
-         this.panel2 = new System.Windows.Forms.Panel();
-         this.panel3 = new System.Windows.Forms.Panel();
+         this.Btn_Spin = new System.Windows.Forms.Button();
          this.panel1 = new System.Windows.Forms.Panel();
+         this.label1 = new System.Windows.Forms.Label();
+         this.label2 = new System.Windows.Forms.Label();
          this.SuspendLayout();
          // 
-         // Pn_1
+         // Btn_Spin
          // 
-         this.Pn_1.BackColor = System.Drawing.Color.LightGray;
-         this.Pn_1.Location = new System.Drawing.Point(40, 58);
-         this.Pn_1.Name = "Pn_1";
-         this.Pn_1.Size = new System.Drawing.Size(305, 40);
-         this.Pn_1.TabIndex = 0;
-         // 
-         // panel2
-         // 
-         this.panel2.BackColor = System.Drawing.Color.LightGray;
-         this.panel2.Location = new System.Drawing.Point(40, 143);
-         this.panel2.Name = "panel2";
-         this.panel2.Size = new System.Drawing.Size(305, 49);
-         this.panel2.TabIndex = 1;
-         // 
-         // panel3
-         // 
-         this.panel3.BackColor = System.Drawing.Color.LightGray;
-         this.panel3.Location = new System.Drawing.Point(40, 233);
-         this.panel3.Name = "panel3";
-         this.panel3.Size = new System.Drawing.Size(305, 51);
-         this.panel3.TabIndex = 2;
+         this.Btn_Spin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+         this.Btn_Spin.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.Btn_Spin.Location = new System.Drawing.Point(106, 370);
+         this.Btn_Spin.Name = "Btn_Spin";
+         this.Btn_Spin.Size = new System.Drawing.Size(200, 45);
+         this.Btn_Spin.TabIndex = 8;
+         this.Btn_Spin.Text = "SPIN";
+         this.Btn_Spin.UseVisualStyleBackColor = true;
          // 
          // panel1
          // 
-         this.panel1.BackColor = System.Drawing.Color.LightGray;
-         this.panel1.Location = new System.Drawing.Point(40, 327);
+         this.panel1.Location = new System.Drawing.Point(103, 140);
          this.panel1.Name = "panel1";
-         this.panel1.Size = new System.Drawing.Size(305, 51);
-         this.panel1.TabIndex = 3;
+         this.panel1.Size = new System.Drawing.Size(200, 100);
+         this.panel1.TabIndex = 9;
+         // 
+         // label1
+         // 
+         this.label1.AutoSize = true;
+         this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label1.Location = new System.Drawing.Point(131, 285);
+         this.label1.Name = "label1";
+         this.label1.Size = new System.Drawing.Size(133, 24);
+         this.label1.TabIndex = 10;
+         this.label1.Text = "AnonymOUSS";
+         // 
+         // label2
+         // 
+         this.label2.AutoSize = true;
+         this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label2.Location = new System.Drawing.Point(99, 67);
+         this.label2.Name = "label2";
+         this.label2.Size = new System.Drawing.Size(207, 24);
+         this.label2.TabIndex = 11;
+         this.label2.Text = "Tour De Joueur JJJJJN";
          // 
          // Jeu
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.BackColor = System.Drawing.Color.Gray;
-         this.ClientSize = new System.Drawing.Size(415, 592);
+         this.BackColor = System.Drawing.SystemColors.Control;
+         this.ClientSize = new System.Drawing.Size(415, 496);
+         this.Controls.Add(this.label2);
+         this.Controls.Add(this.label1);
          this.Controls.Add(this.panel1);
-         this.Controls.Add(this.panel3);
-         this.Controls.Add(this.panel2);
-         this.Controls.Add(this.Pn_1);
+         this.Controls.Add(this.Btn_Spin);
          this.Name = "Jeu";
          this.Text = "Jeu";
          this.ResumeLayout(false);
+         this.PerformLayout();
 
       }
 
       #endregion
 
-      private System.Windows.Forms.Panel Pn_1;
-      private System.Windows.Forms.Panel panel2;
-      private System.Windows.Forms.Panel panel3;
+      private System.Windows.Forms.Button Btn_Spin;
       private System.Windows.Forms.Panel panel1;
+      private System.Windows.Forms.Label label1;
+      private System.Windows.Forms.Label label2;
+
    }
 }

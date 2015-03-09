@@ -42,7 +42,7 @@
          this.Btn_Solo.Name = "Btn_Solo";
          this.Btn_Solo.Size = new System.Drawing.Size(159, 23);
          this.Btn_Solo.TabIndex = 5;
-         this.Btn_Solo.Text = "button1";
+         this.Btn_Solo.Text = "Solo Joueur";
          this.Btn_Solo.UseVisualStyleBackColor = true;
          // 
          // Btn_Two
@@ -52,7 +52,7 @@
          this.Btn_Two.Name = "Btn_Two";
          this.Btn_Two.Size = new System.Drawing.Size(159, 23);
          this.Btn_Two.TabIndex = 6;
-         this.Btn_Two.Text = "button2";
+         this.Btn_Two.Text = "2 Joueurs";
          this.Btn_Two.UseVisualStyleBackColor = true;
          // 
          // Btn_Tree
@@ -62,7 +62,7 @@
          this.Btn_Tree.Name = "Btn_Tree";
          this.Btn_Tree.Size = new System.Drawing.Size(159, 23);
          this.Btn_Tree.TabIndex = 7;
-         this.Btn_Tree.Text = "button3";
+         this.Btn_Tree.Text = "3 Joueurs";
          this.Btn_Tree.UseVisualStyleBackColor = true;
          // 
          // Btn_Four
@@ -72,7 +72,7 @@
          this.Btn_Four.Name = "Btn_Four";
          this.Btn_Four.Size = new System.Drawing.Size(159, 23);
          this.Btn_Four.TabIndex = 8;
-         this.Btn_Four.Text = "button4";
+         this.Btn_Four.Text = "4 Joueurs";
          this.Btn_Four.UseVisualStyleBackColor = true;
          // 
          // Btn_Question
@@ -82,7 +82,7 @@
          this.Btn_Question.Name = "Btn_Question";
          this.Btn_Question.Size = new System.Drawing.Size(159, 23);
          this.Btn_Question.TabIndex = 9;
-         this.Btn_Question.Text = "button5";
+         this.Btn_Question.Text = "Questions";
          this.Btn_Question.UseVisualStyleBackColor = true;
          // 
          // Menu

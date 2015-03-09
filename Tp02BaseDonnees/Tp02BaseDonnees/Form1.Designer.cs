@@ -196,7 +196,7 @@
          // 
          // Btn_Enregistrer
          // 
-         this.Btn_Enregistrer.Location = new System.Drawing.Point(164, 384);
+         this.Btn_Enregistrer.Location = new System.Drawing.Point(131, 369);
          this.Btn_Enregistrer.Name = "Btn_Enregistrer";
          this.Btn_Enregistrer.Size = new System.Drawing.Size(75, 23);
          this.Btn_Enregistrer.TabIndex = 16;
@@ -206,7 +206,7 @@
          // 
          // Btn_Cancel
          // 
-         this.Btn_Cancel.Location = new System.Drawing.Point(252, 384);
+         this.Btn_Cancel.Location = new System.Drawing.Point(227, 369);
          this.Btn_Cancel.Name = "Btn_Cancel";
          this.Btn_Cancel.Size = new System.Drawing.Size(75, 23);
          this.Btn_Cancel.TabIndex = 17;
@@ -217,7 +217,7 @@
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.ClientSize = new System.Drawing.Size(365, 444);
+         this.ClientSize = new System.Drawing.Size(365, 409);
          this.Controls.Add(this.Btn_Cancel);
          this.Controls.Add(this.Btn_Enregistrer);
          this.Controls.Add(this.groupBox1);

@@ -16,5 +16,12 @@ namespace Tp02BaseDonnees
       {
          InitializeComponent();
       }
+
+      private void AliasForm_Load(object sender, EventArgs e)
+      {
+
+      }
+
+    
    }
 }

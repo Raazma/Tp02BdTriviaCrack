@@ -57,7 +57,7 @@
          this.Btn_Validation.Name = "Btn_Validation";
          this.Btn_Validation.Size = new System.Drawing.Size(129, 23);
          this.Btn_Validation.TabIndex = 8;
-         this.Btn_Validation.Text = "J\'ai deja un compte";
+         this.Btn_Validation.Text = "Connection";
          this.Btn_Validation.UseVisualStyleBackColor = true;
          // 
          // Btn_Annuler
@@ -67,14 +67,14 @@
          this.Btn_Annuler.Name = "Btn_Annuler";
          this.Btn_Annuler.Size = new System.Drawing.Size(131, 23);
          this.Btn_Annuler.TabIndex = 9;
-         this.Btn_Annuler.Text = "J\'ai deja un compte";
+         this.Btn_Annuler.Text = "Annuler";
          this.Btn_Annuler.UseVisualStyleBackColor = true;
          // 
          // CompteExistant
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.ClientSize = new System.Drawing.Size(369, 227);
+         this.ClientSize = new System.Drawing.Size(303, 194);
          this.Controls.Add(this.Btn_Annuler);
          this.Controls.Add(this.Btn_Validation);
          this.Controls.Add(this.textBox1);
