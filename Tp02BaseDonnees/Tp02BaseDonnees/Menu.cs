@@ -35,5 +35,14 @@ namespace Tp02BaseDonnees
       {
 
       }
+
+      private void Btn_Question_Click(object sender, EventArgs e)
+      {
+         FormAjoutQuestion form = new FormAjoutQuestion();
+         this.Hide();
+         form.ShowDialog();
+         this.Close();
+       
+      }
    }
 }

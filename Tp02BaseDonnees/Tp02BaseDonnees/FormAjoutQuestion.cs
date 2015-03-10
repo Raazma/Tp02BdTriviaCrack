@@ -11,10 +11,10 @@ using Oracle.DataAccess.Client;
 
 namespace Tp02BaseDonnees
 {
-   public partial class Form1 : Form
+   public partial class FormAjoutQuestion : Form
    {
       OracleConnection oraconn = new OracleConnection();
-      public Form1()
+      public FormAjoutQuestion()
       {
          InitializeComponent();
       }
