@@ -45,6 +45,7 @@
             this.Btn_Solo.TabIndex = 5;
             this.Btn_Solo.Text = "Solo Joueur";
             this.Btn_Solo.UseVisualStyleBackColor = true;
+            this.Btn_Solo.Click += new System.EventHandler(this.Btn_Solo_Click);
             // 
             // Btn_Two
             // 
@@ -55,6 +56,7 @@
             this.Btn_Two.TabIndex = 6;
             this.Btn_Two.Text = "2 Joueurs";
             this.Btn_Two.UseVisualStyleBackColor = true;
+            this.Btn_Two.Click += new System.EventHandler(this.Btn_Two_Click);
             // 
             // Btn_Tree
             // 
@@ -65,6 +67,7 @@
             this.Btn_Tree.TabIndex = 7;
             this.Btn_Tree.Text = "3 Joueurs";
             this.Btn_Tree.UseVisualStyleBackColor = true;
+            this.Btn_Tree.Click += new System.EventHandler(this.Btn_Tree_Click);
             // 
             // Btn_Four
             // 
@@ -75,6 +78,7 @@
             this.Btn_Four.TabIndex = 8;
             this.Btn_Four.Text = "4 Joueurs";
             this.Btn_Four.UseVisualStyleBackColor = true;
+            this.Btn_Four.Click += new System.EventHandler(this.Btn_Four_Click);
             // 
             // Btn_Question
             // 

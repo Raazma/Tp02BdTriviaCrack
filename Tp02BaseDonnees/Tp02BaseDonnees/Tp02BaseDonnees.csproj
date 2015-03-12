@@ -95,6 +95,12 @@
     <Compile Include="RepondreForm.Designer.cs">
       <DependentUpon>RepondreForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="StartGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartGame.Designer.cs">
+      <DependentUpon>StartGame.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AliasForm.resx">
       <DependentUpon>AliasForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +133,9 @@
     </Compile>
     <EmbeddedResource Include="RepondreForm.resx">
       <DependentUpon>RepondreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartGame.resx">
+      <DependentUpon>StartGame.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -44,6 +44,7 @@
             this.Btn_Spin.TabIndex = 8;
             this.Btn_Spin.Text = "SPIN";
             this.Btn_Spin.UseVisualStyleBackColor = true;
+            this.Btn_Spin.Click += new System.EventHandler(this.Btn_Spin_Click);
             // 
             // Pn_Color
             // 
@@ -77,7 +78,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(415, 496);
             this.Controls.Add(this.Lb_Nom);
             this.Controls.Add(this.Lb_NomCat);
