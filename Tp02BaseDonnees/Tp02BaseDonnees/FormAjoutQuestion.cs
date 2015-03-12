@@ -33,13 +33,11 @@ namespace Tp02BaseDonnees
          try
          {
             oraconn.ConnectionString = chainedeconnexion;
-            oraconn.Open();
-          
+            oraconn.Open();          
          }
          catch (Exception ex)
          {
             MessageBox.Show(ex.ToString());
-
          }                 
       }
 
@@ -128,14 +126,11 @@ namespace Tp02BaseDonnees
 
       private char CreateFlag(String letter)
       {
-         return (letter == Cb_Rep.SelectedItem.ToString()) ? 'V' : 'F';      
-     
+         return (letter == Cb_Rep.SelectedItem.ToString()) ? 'V' : 'F';           
       }
       private String FormatedString()
       {
-
-         return ReadCodeCat() + (CountnbQuestion(ReadCodeCat()) + 1).ToString();
-             
+         return ReadCodeCat() + (CountnbQuestion(ReadCodeCat()) + 1).ToString();            
       }
       private String ReadCodeCat()
       {
@@ -148,12 +143,10 @@ namespace Tp02BaseDonnees
          {
          Data = reader.GetString(0);          
          }
-
          return Data;
       }
       private int CountnbQuestion(String code)
       {
-
          try
          {
             OracleCommand com = new OracleCommand("nombre", oraconn);

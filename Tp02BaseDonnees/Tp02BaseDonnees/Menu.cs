@@ -25,7 +25,6 @@ namespace Tp02BaseDonnees
       {
 
       }
-
       private void TB_Solo_TextChanged(object sender, EventArgs e)
       {
 
@@ -36,8 +35,7 @@ namespace Tp02BaseDonnees
          FormAjoutQuestion form = new FormAjoutQuestion();
          this.Hide();
          form.ShowDialog();
-         this.Show();
-       
+         this.Show();      
       }
 
       private void Btn_Solo_Click(object sender, EventArgs e)
@@ -46,15 +44,13 @@ namespace Tp02BaseDonnees
           this.Hide();
           form.ShowDialog();
         
-
           Jeu formjeu = new Jeu();
           formjeu.ShowDialog();
-         this.Close();
+          this.Close();
       }
 
       private void Btn_Two_Click(object sender, EventArgs e)
-      {
-         
+      {         
           this.Hide();
           for (int i = 0; i < 2; i++)
           { 
@@ -67,13 +63,12 @@ namespace Tp02BaseDonnees
       }
 
       private void Btn_Tree_Click(object sender, EventArgs e)
-      {
-          
+      {          
           this.Hide();
           for (int i = 0; i < 3; i++)
           {
              AliasForm form = new AliasForm(i);
-              form.ShowDialog();
+             form.ShowDialog();
           }
           Jeu formjeu = new Jeu();
           formjeu.ShowDialog();
@@ -87,7 +82,7 @@ namespace Tp02BaseDonnees
           for (int i = 0; i < 4; i++)
           {
              AliasForm form = new AliasForm(i);
-              form.ShowDialog();
+             form.ShowDialog();
           }
           Jeu formjeu = new Jeu();
           formjeu.ShowDialog();

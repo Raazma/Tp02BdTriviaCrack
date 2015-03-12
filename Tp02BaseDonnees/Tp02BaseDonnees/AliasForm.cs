@@ -37,18 +37,17 @@ namespace Tp02BaseDonnees
           if (form.DialogResult == DialogResult.OK)
           {
              Name = form.Name;
-              this.Close();
+             this.Close();
           }
           else
           {
-              this.Show();         
+             this.Show();         
           }
       }
 
       private void Btn_Create_Click(object sender, EventArgs e)
       {
-         Name = Tb_Alias.Text;
-        
+         Name = Tb_Alias.Text;        
          //rentrer le reste des infos dans la bd;
       }
 

@@ -20,20 +20,17 @@ namespace Tp02BaseDonnees
       private void Btn_Spin_Click(object sender, EventArgs e)
       {
           Random rnd = new Random();
-
-          for (int i = 0; i <15; i++)
-          {
-                       
+          for (int i = 0; i < 15; i++)
+          {                       
               int Rcolor = rnd.Next(1, 8);                          
               ColorChanger(Rcolor);
               SetCategorieName(Rcolor);
-           }
-       
-
+           }       
       }
 
           private void ColorChanger(int i)
           {
+
             switch (i)
               {               
                   case 1:
@@ -83,7 +80,6 @@ namespace Tp02BaseDonnees
           }
           private void SetCategorieName(int i)
           {
-
               switch (i)
               {
                   case 1:
@@ -113,11 +109,7 @@ namespace Tp02BaseDonnees
                       Lb_NomCat.Text = "Anonymouusss";
                       break;
               }
-          
-          
-          
-          
-          
+                                              
           }
 
       }

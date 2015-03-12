@@ -20,6 +20,7 @@ namespace Tp02BaseDonnees
       private void FormScoreJ_Load(object sender, EventArgs e)
       {
 
+
       }
 
      
