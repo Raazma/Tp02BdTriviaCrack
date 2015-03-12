@@ -24,9 +24,7 @@ namespace Tp02BaseDonnees
           for (int i = 0; i <15; i++)
           {
                        
-              int Rcolor = rnd.Next(1, 8);
-             
-              
+              int Rcolor = rnd.Next(1, 8);                          
               ColorChanger(Rcolor);
               SetCategorieName(Rcolor);
            }
@@ -85,8 +83,6 @@ namespace Tp02BaseDonnees
           }
           private void SetCategorieName(int i)
           {
-
-
 
               switch (i)
               {

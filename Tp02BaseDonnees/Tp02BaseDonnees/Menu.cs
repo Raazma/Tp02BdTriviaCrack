@@ -19,15 +19,10 @@ namespace Tp02BaseDonnees
 
       private void Menu_Load(object sender, EventArgs e)
       {
-
-
          SetDefault();
-
       }
       private void SetDefault()
       {
-
-
 
       }
 
@@ -41,49 +36,67 @@ namespace Tp02BaseDonnees
          FormAjoutQuestion form = new FormAjoutQuestion();
          this.Hide();
          form.ShowDialog();
-         this.Close();
+         this.Show();
        
       }
 
       private void Btn_Solo_Click(object sender, EventArgs e)
       {
-          AliasForm form = new AliasForm();
+          AliasForm form = new AliasForm(0);
           this.Hide();
           form.ShowDialog();
-          this.Close();
+        
+
+          Jeu formjeu = new Jeu();
+          formjeu.ShowDialog();
+         this.Close();
       }
 
       private void Btn_Two_Click(object sender, EventArgs e)
       {
-          AliasForm form = new AliasForm();
+         
           this.Hide();
           for (int i = 0; i < 2; i++)
           { 
-              form.ShowDialog();             
-          }         
+             AliasForm form = new AliasForm(i);
+             form.ShowDialog();             
+          }
+          Jeu formjeu = new Jeu();
+          formjeu.ShowDialog();
           this.Close();
       }
 
       private void Btn_Tree_Click(object sender, EventArgs e)
       {
-          AliasForm form = new AliasForm();
+          
           this.Hide();
           for (int i = 0; i < 3; i++)
           {
+             AliasForm form = new AliasForm(i);
               form.ShowDialog();
           }
+          Jeu formjeu = new Jeu();
+          formjeu.ShowDialog();
           this.Close();
       }
 
       private void Btn_Four_Click(object sender, EventArgs e)
       {
-          AliasForm form = new AliasForm();
+          
           this.Hide();
           for (int i = 0; i < 4; i++)
           {
+             AliasForm form = new AliasForm(i);
               form.ShowDialog();
           }
+          Jeu formjeu = new Jeu();
+          formjeu.ShowDialog();
           this.Close();
+      }
+
+      private void Btn_Quitter_Click(object sender, EventArgs e)
+      {
+         this.Close();
       }
    }
 }

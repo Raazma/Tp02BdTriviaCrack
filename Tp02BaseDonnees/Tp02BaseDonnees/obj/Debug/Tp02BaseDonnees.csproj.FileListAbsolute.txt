@@ -33,7 +33,6 @@ C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\bin
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Tp02BaseDonnees.pdb
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Oracle.DataAccess.dll
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.csprojResolveAssemblyReference.cache
-C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Form1.resources
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Properties.Resources.resources
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.csproj.GenerateResource.Cache
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Jeu.resources
@@ -50,3 +49,6 @@ C:\Users\Razma\Documents\C#\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\ob
 C:\Users\Razma\Documents\C#\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.RepondreForm.resources
 C:\Users\Razma\Documents\C#\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.FormAjoutQuestion.resources
 C:\Users\Razma\Documents\C#\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.StartGame.resources
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.FormAjoutQuestion.resources
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.FormScoreF.resources
+C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.FormScoreJ.resources
