@@ -12,20 +12,33 @@ namespace Tp02BaseDonnees
 {
    public partial class Jeu : Form
    {
-      public Jeu()
+       int numTour = 0;
+       String[] tabAlias;
+      public Jeu(String[] alias , int tour)
       {
          InitializeComponent();
+         tabAlias = alias;
+         numTour = tour;
+         AfficherAlias();
       }
 
       private void Btn_Spin_Click(object sender, EventArgs e)
       {
+          int Rcolor = 0;
           Random rnd = new Random();
+
           for (int i = 0; i < 15; i++)
           {                       
-              int Rcolor = rnd.Next(1, 8);                          
+              Rcolor = rnd.Next(1, 8);                          
               ColorChanger(Rcolor);
-              SetCategorieName(Rcolor);
-           }       
+              SetCategorieName(Rcolor);             
+           }
+
+          System.Threading.Thread.Sleep(1000);
+          RepondreForm form = new RepondreForm(Rcolor);
+          this.Hide();
+          form.ShowDialog();
+          this.Close();
       }
 
           private void ColorChanger(int i)
@@ -64,8 +77,7 @@ namespace Tp02BaseDonnees
                       System.Threading.Thread.Sleep(100);
                       break;
                   case 7:
-                      Pn_Color.BackColor = Color.White;
-                      
+                      Pn_Color.BackColor = Color.White;                     
                       Application.DoEvents();
                       System.Threading.Thread.Sleep(100);
                       break;
@@ -112,6 +124,12 @@ namespace Tp02BaseDonnees
                                               
           }
 
+          private void AfficherAlias()
+          {
+
+              Lb_Nom.Text = "Tour De " + tabAlias[numTour];
+          
+          }
       }
    }
 

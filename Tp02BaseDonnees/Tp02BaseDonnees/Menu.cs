@@ -41,50 +41,58 @@ namespace Tp02BaseDonnees
       private void Btn_Solo_Click(object sender, EventArgs e)
       {
           AliasForm form = new AliasForm(0);
+          String[]  alias= new String[1];
+         
           this.Hide();
           form.ShowDialog();
-        
-          Jeu formjeu = new Jeu();
+         alias[0] = form.Name;
+          Jeu formjeu = new Jeu(alias,0);
           formjeu.ShowDialog();
           this.Close();
       }
 
       private void Btn_Two_Click(object sender, EventArgs e)
       {         
+          String[]  alias= new String[2];       
           this.Hide();
           for (int i = 0; i < 2; i++)
           { 
              AliasForm form = new AliasForm(i);
-             form.ShowDialog();             
+             form.ShowDialog();   
+              alias[i] = form.Name;          
           }
-          Jeu formjeu = new Jeu();
+          Jeu formjeu = new Jeu(alias,0);
           formjeu.ShowDialog();
           this.Close();
       }
 
       private void Btn_Tree_Click(object sender, EventArgs e)
-      {          
+      {
+          String[] alias = new String[3];     
           this.Hide();
           for (int i = 0; i < 3; i++)
           {
              AliasForm form = new AliasForm(i);
+             alias[i] = form.Name;   
              form.ShowDialog();
           }
-          Jeu formjeu = new Jeu();
+          Jeu formjeu = new Jeu(alias,0);
           formjeu.ShowDialog();
           this.Close();
       }
 
       private void Btn_Four_Click(object sender, EventArgs e)
       {
+          String[] alias = new String[4];     
           
           this.Hide();
           for (int i = 0; i < 4; i++)
           {
              AliasForm form = new AliasForm(i);
+             alias[i] = form.Name;   
              form.ShowDialog();
           }
-          Jeu formjeu = new Jeu();
+          Jeu formjeu = new Jeu(alias,0);
           formjeu.ShowDialog();
           this.Close();
       }
