@@ -48,7 +48,6 @@ C:\Users\Razma\Documents\C#\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\ob
 C:\Users\Razma\Documents\C#\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Menu.resources
 C:\Users\Razma\Documents\C#\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.RepondreForm.resources
 C:\Users\Razma\Documents\C#\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.FormAjoutQuestion.resources
-C:\Users\Razma\Documents\C#\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.StartGame.resources
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.FormAjoutQuestion.resources
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.FormScoreF.resources
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.FormScoreJ.resources
