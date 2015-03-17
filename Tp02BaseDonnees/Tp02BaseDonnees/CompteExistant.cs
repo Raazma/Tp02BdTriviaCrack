@@ -22,6 +22,11 @@ namespace Tp02BaseDonnees
       {
          //reste a faire la validation que lalias existe belle et bien dans la bd
          Name = Tb_Alias.Text;
+         
+      }
+
+      private void Btn_Annuler_Click(object sender, EventArgs e)
+      {
 
       }
    }

@@ -28,8 +28,7 @@ namespace Tp02BaseDonnees
       private void SetColor(int catpiger)
       {
           switch (catpiger)
-          {
-                
+          {               
               case 1:
                   Pn_couleur.BackColor = Color.Blue;
                   Application.DoEvents();
@@ -98,7 +97,6 @@ namespace Tp02BaseDonnees
                   break;
           }                                                    
       }
-
       private void Btn_A_Click(object sender, EventArgs e)
       {
 

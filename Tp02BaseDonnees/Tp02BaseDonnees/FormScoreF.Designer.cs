@@ -119,8 +119,8 @@
             this.Controls.Add(this.btn_NouvellePartie);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormScoreF";
-            this.Text = "FormScoreF";
             this.Load += new System.EventHandler(this.FormScoreF_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -37,7 +37,7 @@ namespace Tp02BaseDonnees
           if (form.DialogResult == DialogResult.OK)
           {
              Name = form.Name;
-             this.Close();
+           
           }
           else
           {
