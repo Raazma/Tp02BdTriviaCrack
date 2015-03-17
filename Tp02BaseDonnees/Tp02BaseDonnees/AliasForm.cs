@@ -17,18 +17,19 @@ namespace Tp02BaseDonnees
       public AliasForm()
       {
          InitializeComponent();
+         SetSetting();
       }
       public AliasForm(int i)
       {
          InitializeComponent();
          this.i = i;
          Lb_Ident.Text = "Au Joueur "+( i + 1 )+ " a s'indentifier";
+         SetSetting();
       }
       private void AliasForm_Load(object sender, EventArgs e)
       {
 
       }
-
       private void Btn_Login_Click(object sender, EventArgs e)
       {
           CompteExistant form = new CompteExistant();
@@ -51,6 +52,33 @@ namespace Tp02BaseDonnees
          //rentrer le reste des infos dans la bd;
       }
 
+       private void SetSetting()
+       {
+           if (Tb_Alias.Text != "" && Tb_Name.Text != "" && Tb_Prenom.Text != "")
+           {
+               Btn_Create.Enabled = true;
+
+           }
+           else
+           {
+               Btn_Create.Enabled = false;
+           }
+       
+       }
+
+       private void Tb_Name_TextChanged(object sender, EventArgs e)
+       {
+           SetSetting();
+       }
+       private void Tb_Prenom_TextChanged(object sender, EventArgs e)
+       {
+           SetSetting();
+       }
+
+       private void Tb_Alias_TextChanged(object sender, EventArgs e)
+       {
+           SetSetting();
+       }
     
    }
 }
