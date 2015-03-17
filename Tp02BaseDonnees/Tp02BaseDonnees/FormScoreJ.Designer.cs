@@ -130,54 +130,54 @@
             this.Lb_bleu.AutoSize = true;
             this.Lb_bleu.Location = new System.Drawing.Point(243, 126);
             this.Lb_bleu.Name = "Lb_bleu";
-            this.Lb_bleu.Size = new System.Drawing.Size(35, 13);
+            this.Lb_bleu.Size = new System.Drawing.Size(24, 13);
             this.Lb_bleu.TabIndex = 8;
-            this.Lb_bleu.Text = "label9";
+            this.Lb_bleu.Text = "0/5";
             // 
             // Lb_Vert
             // 
             this.Lb_Vert.AutoSize = true;
-            this.Lb_Vert.Location = new System.Drawing.Point(237, 168);
+            this.Lb_Vert.Location = new System.Drawing.Point(243, 168);
             this.Lb_Vert.Name = "Lb_Vert";
-            this.Lb_Vert.Size = new System.Drawing.Size(41, 13);
+            this.Lb_Vert.Size = new System.Drawing.Size(24, 13);
             this.Lb_Vert.TabIndex = 9;
-            this.Lb_Vert.Text = "label10";
+            this.Lb_Vert.Text = "0/5";
             // 
             // Lb_Jaune
             // 
             this.Lb_Jaune.AutoSize = true;
-            this.Lb_Jaune.Location = new System.Drawing.Point(237, 217);
+            this.Lb_Jaune.Location = new System.Drawing.Point(243, 217);
             this.Lb_Jaune.Name = "Lb_Jaune";
-            this.Lb_Jaune.Size = new System.Drawing.Size(41, 13);
+            this.Lb_Jaune.Size = new System.Drawing.Size(24, 13);
             this.Lb_Jaune.TabIndex = 10;
-            this.Lb_Jaune.Text = "label11";
+            this.Lb_Jaune.Text = "0/5";
             // 
             // Lb_Orange
             // 
             this.Lb_Orange.AutoSize = true;
-            this.Lb_Orange.Location = new System.Drawing.Point(237, 268);
+            this.Lb_Orange.Location = new System.Drawing.Point(243, 268);
             this.Lb_Orange.Name = "Lb_Orange";
-            this.Lb_Orange.Size = new System.Drawing.Size(41, 13);
+            this.Lb_Orange.Size = new System.Drawing.Size(24, 13);
             this.Lb_Orange.TabIndex = 11;
-            this.Lb_Orange.Text = "label12";
+            this.Lb_Orange.Text = "0/5";
             // 
             // Lb_Rouge
             // 
             this.Lb_Rouge.AutoSize = true;
-            this.Lb_Rouge.Location = new System.Drawing.Point(237, 320);
+            this.Lb_Rouge.Location = new System.Drawing.Point(243, 320);
             this.Lb_Rouge.Name = "Lb_Rouge";
-            this.Lb_Rouge.Size = new System.Drawing.Size(41, 13);
+            this.Lb_Rouge.Size = new System.Drawing.Size(24, 13);
             this.Lb_Rouge.TabIndex = 12;
-            this.Lb_Rouge.Text = "label13";
+            this.Lb_Rouge.Text = "0/5";
             // 
             // Lb_Rose
             // 
             this.Lb_Rose.AutoSize = true;
-            this.Lb_Rose.Location = new System.Drawing.Point(237, 369);
+            this.Lb_Rose.Location = new System.Drawing.Point(243, 369);
             this.Lb_Rose.Name = "Lb_Rose";
-            this.Lb_Rose.Size = new System.Drawing.Size(41, 13);
+            this.Lb_Rose.Size = new System.Drawing.Size(24, 13);
             this.Lb_Rose.TabIndex = 13;
-            this.Lb_Rose.Text = "label14";
+            this.Lb_Rose.Text = "0/5";
             // 
             // Lb_name
             // 

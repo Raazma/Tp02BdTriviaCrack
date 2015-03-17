@@ -31,14 +31,26 @@ namespace Tp02BaseDonnees
           {                       
               Rcolor = rnd.Next(1, 8);                          
               ColorChanger(Rcolor);
-              SetCategorieName(Rcolor);             
+                   
            }
 
           System.Threading.Thread.Sleep(1000);
+
+          if(Rcolor != 7)
+          {
           RepondreForm form = new RepondreForm(Rcolor);
           this.Hide();
           form.ShowDialog();
           this.Close();
+          }
+          else
+          {
+              this.Hide();
+              ChooseCategorie form = new ChooseCategorie();
+              form.ShowDialog();
+              this.Close();
+          }
+
       }
 
           private void ColorChanger(int i)
@@ -48,36 +60,43 @@ namespace Tp02BaseDonnees
               {               
                   case 1:
                       Pn_Color.BackColor = Color.Blue;
+                      SetCategorieName(1);   
                       Application.DoEvents();
                       System.Threading.Thread.Sleep(100);
                       break;
                   case 2:
                       Pn_Color.BackColor = Color.Green;
+                      SetCategorieName(2);   
                       Application.DoEvents();
                       System.Threading.Thread.Sleep(100);
                       break;
                   case 3:
                       Pn_Color.BackColor = Color.Yellow;
+                      SetCategorieName(3);
                       Application.DoEvents();
                       System.Threading.Thread.Sleep(100);
                       break;
                   case 4:
                       Pn_Color.BackColor = Color.Orange;
+                      SetCategorieName(4);
                       Application.DoEvents();
                       System.Threading.Thread.Sleep(100);
                       break;
                   case 5:
                       Pn_Color.BackColor = Color.Red;
+                      SetCategorieName(5);
                       Application.DoEvents();
                       System.Threading.Thread.Sleep(100);
                       break;
                   case 6:
                       Pn_Color.BackColor = Color.Pink;
+                      SetCategorieName(6);
                       Application.DoEvents();
                       System.Threading.Thread.Sleep(100);
                       break;
                   case 7:
-                      Pn_Color.BackColor = Color.White;                     
+                      Pn_Color.BackColor = Color.White;
+                      SetCategorieName(7);
                       Application.DoEvents();
                       System.Threading.Thread.Sleep(100);
                       break;

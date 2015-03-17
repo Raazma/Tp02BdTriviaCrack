@@ -52,6 +52,12 @@
     <Compile Include="AliasForm.Designer.cs">
       <DependentUpon>AliasForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChooseCategorie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseCategorie.Designer.cs">
+      <DependentUpon>ChooseCategorie.cs</DependentUpon>
+    </Compile>
     <Compile Include="CompteExistant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </Compile>
     <EmbeddedResource Include="AliasForm.resx">
       <DependentUpon>AliasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseCategorie.resx">
+      <DependentUpon>ChooseCategorie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CompteExistant.resx">
       <DependentUpon>CompteExistant.cs</DependentUpon>

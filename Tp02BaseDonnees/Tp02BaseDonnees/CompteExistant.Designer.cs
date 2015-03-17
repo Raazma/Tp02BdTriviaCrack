@@ -49,6 +49,7 @@
             this.Tb_Alias.Name = "Tb_Alias";
             this.Tb_Alias.Size = new System.Drawing.Size(129, 20);
             this.Tb_Alias.TabIndex = 1;
+            this.Tb_Alias.TextChanged += new System.EventHandler(this.Tb_Alias_TextChanged);
             // 
             // Btn_Validation
             // 
@@ -85,6 +86,7 @@
             this.Controls.Add(this.Lb_Alias);
             this.Name = "CompteExistant";
             this.Text = "CompteExistant";
+            this.Load += new System.EventHandler(this.CompteExistant_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

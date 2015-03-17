@@ -16,6 +16,7 @@ namespace Tp02BaseDonnees
       public CompteExistant()
       {
          InitializeComponent();
+         SetButton();
       }
 
       private void Btn_Validation_Click(object sender, EventArgs e)
@@ -26,6 +27,29 @@ namespace Tp02BaseDonnees
       }
 
       private void Btn_Annuler_Click(object sender, EventArgs e)
+      {
+
+      }
+
+      private void SetButton()
+      {
+          if (Tb_Alias.Text != "")
+          {
+              Btn_Validation.Enabled = true;
+          }
+          else
+          {
+              Btn_Validation.Enabled = false;
+          }
+      
+      }
+
+      private void Tb_Alias_TextChanged(object sender, EventArgs e)
+      {
+          SetButton();
+      }
+
+      private void CompteExistant_Load(object sender, EventArgs e)
       {
 
       }
