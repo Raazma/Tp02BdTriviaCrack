@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Oracle.DataAccess.Client;
 
 namespace Tp02BaseDonnees
 {
    public partial class Menu : Form
    {
+      OracleConnection oraconn = new OracleConnection();
       public Menu()
       {
          InitializeComponent();
@@ -23,6 +25,18 @@ namespace Tp02BaseDonnees
       }
       private void SetDefault()
       {
+         string Dsource = "(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)" +
+             "(HOST=205.237.244.251)(PORT=1521)))" + "(CONNECT_DATA=(SERVICE_NAME=ORCL.clg.qc.ca)))";
+         string chainedeconnexion = "DATA SOURCE =" + Dsource + ";USER ID =  lemairef;PASSWORD = ORACLE1";
+         try
+         {
+            oraconn.ConnectionString = chainedeconnexion;
+            oraconn.Open();
+         }
+         catch (Exception ex)
+         {
+            MessageBox.Show(ex.ToString());
+         }                 
 
       }
       private void TB_Solo_TextChanged(object sender, EventArgs e)
@@ -40,13 +54,13 @@ namespace Tp02BaseDonnees
 
       private void Btn_Solo_Click(object sender, EventArgs e)
       {
-          AliasForm form = new AliasForm(0);
+         AliasForm form = new AliasForm(0, oraconn);
           String[]  alias= new String[1];
          
           this.Hide();
           form.ShowDialog();
          alias[0] = form.Name;
-          Jeu formjeu = new Jeu(alias,0);
+         Jeu formjeu = new Jeu(alias, 0, oraconn);
           formjeu.ShowDialog();
           this.Close();
       }
@@ -56,12 +70,12 @@ namespace Tp02BaseDonnees
           String[]  alias= new String[2];       
           this.Hide();
           for (int i = 0; i < 2; i++)
-          { 
-             AliasForm form = new AliasForm(i);
+          {
+             AliasForm form = new AliasForm(i, oraconn);
              form.ShowDialog();   
               alias[i] = form.Name;          
           }
-          Jeu formjeu = new Jeu(alias,0);
+          Jeu formjeu = new Jeu(alias, 0, oraconn);
           formjeu.ShowDialog();
           this.Close();
       }
@@ -72,11 +86,11 @@ namespace Tp02BaseDonnees
           this.Hide();
           for (int i = 0; i < 3; i++)
           {
-             AliasForm form = new AliasForm(i);
+             AliasForm form = new AliasForm(i, oraconn);
              alias[i] = form.Name;   
              form.ShowDialog();
           }
-          Jeu formjeu = new Jeu(alias,0);
+          Jeu formjeu = new Jeu(alias, 0, oraconn);
           formjeu.ShowDialog();
           this.Close();
       }
@@ -88,11 +102,11 @@ namespace Tp02BaseDonnees
           this.Hide();
           for (int i = 0; i < 4; i++)
           {
-             AliasForm form = new AliasForm(i);
+             AliasForm form = new AliasForm(i,oraconn);
              alias[i] = form.Name;   
              form.ShowDialog();
           }
-          Jeu formjeu = new Jeu(alias,0);
+          Jeu formjeu = new Jeu(alias, 0, oraconn);
           formjeu.ShowDialog();
           this.Close();
       }
@@ -101,5 +115,6 @@ namespace Tp02BaseDonnees
       {
          this.Close();
       }
+      
    }
 }

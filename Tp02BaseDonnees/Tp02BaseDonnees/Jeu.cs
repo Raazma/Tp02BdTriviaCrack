@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Oracle.DataAccess.Client;
 
 namespace Tp02BaseDonnees
 {
@@ -14,11 +15,13 @@ namespace Tp02BaseDonnees
    {
        int numTour = 0;
        String[] tabAlias;
-      public Jeu(String[] alias , int tour)
+       OracleConnection LaCon;
+      public Jeu(String[] alias , int tour , OracleConnection con)
       {
          InitializeComponent();
          tabAlias = alias;
          numTour = tour;
+         LaCon = con;
          AfficherAlias();
       }
 
@@ -38,7 +41,7 @@ namespace Tp02BaseDonnees
 
           if(Rcolor != 7)
           {
-          RepondreForm form = new RepondreForm(Rcolor);
+             RepondreForm form = new RepondreForm(Rcolor, LaCon);
           this.Hide();
           form.ShowDialog();
           this.Close();
@@ -46,7 +49,7 @@ namespace Tp02BaseDonnees
           else
           {
               this.Hide();
-              ChooseCategorie form = new ChooseCategorie();
+              ChooseCategorie form = new ChooseCategorie(LaCon);
               form.ShowDialog();
               this.Close();
           }
