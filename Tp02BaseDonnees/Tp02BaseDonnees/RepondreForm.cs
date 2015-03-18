@@ -19,9 +19,8 @@ namespace Tp02BaseDonnees
       public RepondreForm(int catPiger , OracleConnection con)
       {
          InitializeComponent();
+         this.Conn = con;
          SetCat(catPiger);
-         con = Conn;
-        
       }
       private void SetCat(int catpiger)
       {
@@ -45,7 +44,7 @@ namespace Tp02BaseDonnees
                   break;
               case 3:
                   Pn_couleur.BackColor = Color.Yellow;
-                  GetQuestion("J");
+                 GetQuestion("J");
                   Application.DoEvents();
                   break;
               case 4:
@@ -60,7 +59,7 @@ namespace Tp02BaseDonnees
                   break;
               case 6:
                   Pn_couleur.BackColor = Color.Pink;
-                  GetQuestion("P");
+                GetQuestion("P");
                   Application.DoEvents();
                   break;
               case 7:
@@ -73,6 +72,7 @@ namespace Tp02BaseDonnees
                   Application.DoEvents();
                   break;
           }
+          GetQuestion("P");
       }
 
       private void SetCatName(int catpiger)
@@ -127,32 +127,37 @@ namespace Tp02BaseDonnees
 
       }
       private void GetQuestion(String Code)
-      { 
+      {
          Clear();
+        int LeRand = GetRand();
          OracleCommand comm = new OracleCommand("GetQuestion", Conn);
          comm.CommandType = CommandType.StoredProcedure;
-         comm.CommandText = "GestionQuestion.PigerQuestion";
-
-         OracleParameter LeCode = new OracleParameter("Code", OracleDbType.Char, 1);        
-         LeCode.Direction = ParameterDirection.Input;
-         LeCode.Value = Code;
-
-         OracleParameter Rand = new OracleParameter("leRand", OracleDbType.Int32);
-         Rand.Direction = ParameterDirection.Input;
-         Rand.Value = GetRand();
+         comm.CommandText = "GESTIONQUESTION.PigerQuestion";
 
          OracleParameter Ques = new OracleParameter("ques", OracleDbType.RefCursor);
          Ques.Direction = ParameterDirection.ReturnValue;
-      
+
+         OracleParameter LeCode = new OracleParameter("Code", OracleDbType.Char, 8);
+         LeCode.Direction = ParameterDirection.Input;
+         LeCode.Value = Code + GetRand();
+
+         OracleParameter Rand = new OracleParameter("leRand", OracleDbType.Int32);
+         Rand.Direction = ParameterDirection.Input;
+         Rand.Value = LeRand;
+
          comm.Parameters.Add(Ques);
          comm.Parameters.Add(LeCode);
          comm.Parameters.Add(Rand);
 
          OracleDataAdapter Question = new OracleDataAdapter(comm);
-        Question.Fill(LesQuestion, "Questions");
-        
+         Question.Fill(LesQuestion, "Questions");
          BindInfo();
-      
+
+        Btn_A.Text = GetReponse(Code+LeRand + "A");
+        Btn_B.Text = GetReponse(Code+LeRand + "B");
+        Btn_C.Text = GetReponse(Code+LeRand + "C");
+        Btn_D.Text = GetReponse(Code + LeRand + "D");
+
       }
 
       private void BindInfo()
@@ -163,17 +168,33 @@ namespace Tp02BaseDonnees
       {
          LesQuestion.Clear();
          Lb_Question.DataBindings.Clear();
-
-
       }
       private int  GetRand()
       {
          Random rand = new Random();
-         return rand.Next(1, 2);
+         return rand.Next(1, 3);
       }
       private void RepondreForm_Load(object sender, EventArgs e)
       {
 
+      }
+      private String GetReponse(String CodeCat)
+      {
+         OracleCommand comm = new OracleCommand("GetQuestion", Conn);
+         comm.CommandType = CommandType.StoredProcedure;
+         comm.CommandText = "GestionQuestion.GetRep";
+
+         OracleParameter Rep = new OracleParameter("LaRep", OracleDbType.Varchar2, 60);
+         Rep.Direction = ParameterDirection.ReturnValue;
+
+         OracleParameter CodeRep = new OracleParameter("Code", OracleDbType.Char, 8);
+         CodeRep.Direction = ParameterDirection.Input;
+         CodeRep.Value = CodeCat;
+
+         comm.Parameters.Add(Rep);
+         comm.Parameters.Add(CodeRep);
+
+         return Rep.ToString();
       }
 
    }
