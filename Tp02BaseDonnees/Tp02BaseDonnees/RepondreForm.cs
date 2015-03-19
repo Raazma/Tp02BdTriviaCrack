@@ -254,7 +254,7 @@ namespace Tp02BaseDonnees
          comm.ExecuteNonQuery();
 
          return Rep.Value.ToString();
-         //return "ALLo";
+        
       }
 
    }
