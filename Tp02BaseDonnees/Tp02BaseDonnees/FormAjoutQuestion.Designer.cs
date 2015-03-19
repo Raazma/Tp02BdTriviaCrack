@@ -71,6 +71,7 @@
             this.Tb_Question.Name = "Tb_Question";
             this.Tb_Question.Size = new System.Drawing.Size(191, 56);
             this.Tb_Question.TabIndex = 1;
+            this.Tb_Question.TextChanged += new System.EventHandler(this.Tb_Question_TextChanged);
             // 
             // Tb_A
             // 
@@ -78,6 +79,7 @@
             this.Tb_A.Name = "Tb_A";
             this.Tb_A.Size = new System.Drawing.Size(100, 20);
             this.Tb_A.TabIndex = 2;
+            this.Tb_A.TextChanged += new System.EventHandler(this.Tb_A_TextChanged);
             // 
             // Tb_C
             // 
@@ -85,6 +87,7 @@
             this.Tb_C.Name = "Tb_C";
             this.Tb_C.Size = new System.Drawing.Size(100, 20);
             this.Tb_C.TabIndex = 4;
+            this.Tb_C.TextChanged += new System.EventHandler(this.Tb_C_TextChanged);
             // 
             // Tb_D
             // 
@@ -92,6 +95,7 @@
             this.Tb_D.Name = "Tb_D";
             this.Tb_D.Size = new System.Drawing.Size(100, 20);
             this.Tb_D.TabIndex = 5;
+            this.Tb_D.TextChanged += new System.EventHandler(this.Tb_D_TextChanged);
             // 
             // Tb_B
             // 
@@ -99,6 +103,7 @@
             this.Tb_B.Name = "Tb_B";
             this.Tb_B.Size = new System.Drawing.Size(100, 20);
             this.Tb_B.TabIndex = 6;
+            this.Tb_B.TextChanged += new System.EventHandler(this.Tb_B_TextChanged);
             // 
             // Cb_Rep
             // 
@@ -212,8 +217,9 @@
             this.Btn_Cancel.TabIndex = 17;
             this.Btn_Cancel.Text = "Annuler";
             this.Btn_Cancel.UseVisualStyleBackColor = true;
+            this.Btn_Cancel.Click += new System.EventHandler(this.Btn_Cancel_Click);
             // 
-            // Form1
+            // FormAjoutQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -228,7 +234,7 @@
             this.Controls.Add(this.Tb_Question);
             this.Controls.Add(this.Cb_Categories);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Form1";
+            this.Name = "FormAjoutQuestion";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

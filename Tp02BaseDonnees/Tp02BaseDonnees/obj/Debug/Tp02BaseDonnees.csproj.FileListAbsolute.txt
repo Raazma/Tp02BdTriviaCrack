@@ -53,3 +53,20 @@ C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.FormScoreJ.resources
 C:\Users\Razma\Documents\C#\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.ChooseCategorie.resources
 C:\Users\201037629\Desktop\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.ChooseCategorie.resources
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Tp02BaseDonnees.exe.config
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.exe
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.pdb
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Tp02BaseDonnees.exe
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Tp02BaseDonnees.pdb
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.csprojResolveAssemblyReference.cache
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.AliasForm.resources
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.ChooseCategorie.resources
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.CompteExistant.resources
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.FormAjoutQuestion.resources
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.FormScoreF.resources
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.FormScoreJ.resources
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Jeu.resources
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Menu.resources
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Properties.Resources.resources
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.RepondreForm.resources
+C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.csproj.GenerateResource.Cache

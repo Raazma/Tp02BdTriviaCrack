@@ -44,12 +44,14 @@ namespace Tp02BaseDonnees
       private void StartingState()
       {
          Cb_Categories.SelectedIndex = 0;
-         Cb_Rep.SelectedIndex = 0;                            
+         Cb_Rep.SelectedIndex = 0;
+         SetButton();         
       }
 
       private void Btn_Enregistrer_Click(object sender, EventArgs e)
       {      
          Insertion();
+         Clear();
       }
       private void Insertion()
       {
@@ -162,7 +164,7 @@ namespace Tp02BaseDonnees
             lecode.Value = code;
             com.Parameters.Add(lecode);
             com.ExecuteNonQuery();
-           
+            MessageBox.Show(nb.Value.ToString());
             return int.Parse(nb.Value.ToString());
          }
          catch (Exception e)
@@ -173,7 +175,56 @@ namespace Tp02BaseDonnees
          return -1;
       
       }
+      private void SetButton()
+      {
 
+          if (Tb_Question.Text != "" && Tb_A.Text != "" && Tb_B.Text != "" && Tb_C.Text != "" && Tb_D.Text != "")
+              Btn_Enregistrer.Enabled = true;
+          else
+              Btn_Enregistrer.Enabled = false;
+       
+     
+      }
+      private void Clear()
+      {
+          this.Hide();
+          FormAjoutQuestion form = new FormAjoutQuestion();
+          this.Close();
+      
+      }
+
+      private void Tb_Question_TextChanged(object sender, EventArgs e)
+      {
+          SetButton();
+      }
+
+      private void Tb_A_TextChanged(object sender, EventArgs e)
+      {
+          SetButton();
+      }
+
+      private void Tb_B_TextChanged(object sender, EventArgs e)
+      {
+          SetButton();
+      }
+
+      private void Tb_C_TextChanged(object sender, EventArgs e)
+      {
+          SetButton();
+      }
+
+      private void Tb_D_TextChanged(object sender, EventArgs e)
+      {
+          SetButton();
+      }
+
+      private void Btn_Cancel_Click(object sender, EventArgs e)
+      {
+          Menu form = new Menu();
+          this.Hide();
+          form.ShowDialog();
+          this.Close();
+      }
       
    }
 }
