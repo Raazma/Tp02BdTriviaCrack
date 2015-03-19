@@ -127,6 +127,7 @@ namespace Tp02BaseDonnees
           Btn_A.BackColor = Continu ? Color.Green : Color.Red;
           Application.DoEvents();
           System.Threading.Thread.Sleep(1000);
+          GEstionReponse(b);
           //code tableau score
           this.DialogResult = DialogResult.OK;
           this.Close();
@@ -139,6 +140,7 @@ namespace Tp02BaseDonnees
           Btn_B.BackColor = Continu ? Color.Green : Color.Red;
           Application.DoEvents();
           System.Threading.Thread.Sleep(1000);
+          GEstionReponse(b);
           //code tableau score
           this.DialogResult = DialogResult.OK;
           this.Close();
@@ -150,6 +152,7 @@ namespace Tp02BaseDonnees
           Btn_C.BackColor = Continu ? Color.Green : Color.Red;
           Application.DoEvents();
           System.Threading.Thread.Sleep(1000);
+          GEstionReponse(b);
           //code tableau score
           this.DialogResult = DialogResult.OK;
           this.Close();
@@ -161,6 +164,7 @@ namespace Tp02BaseDonnees
           Btn_D.BackColor = Continu ? Color.Green : Color.Red;
           Application.DoEvents();
           System.Threading.Thread.Sleep(1000);
+          GEstionReponse(b);
           //code tableau score
           this.DialogResult = DialogResult.OK;
           this.Close();
@@ -235,8 +239,7 @@ namespace Tp02BaseDonnees
         Btn_C.Text = GetReponse(Code+LeRand + "C");
         numQuestion[2] = Code + LeRand + "C";
         Btn_D.Text = GetReponse(Code+LeRand + "D");
-        numQuestion[3] = Code + LeRand + "B";
-
+        numQuestion[3] = Code + LeRand + "D";
       }
 
       private void BindInfo()
@@ -278,6 +281,24 @@ namespace Tp02BaseDonnees
          return Rep.Value.ToString();
         
       }
+      private void GEstionReponse(bool b)
+      { 
+      
+       if(b)
+       {
+          FormScoreJ form = new FormScoreJ(Alias,tour,tour,true,Conn);
+          this.Hide();
+          form.ShowDialog();
+          this.Close();
+       }
+       else
+       {
+          FormScoreJ form = new FormScoreJ(Alias, tour, tour++, false,Conn);
+          this.Hide();
+          form.ShowDialog();
+          this.Close();
+      }
 
    }
+}
 }
