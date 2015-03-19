@@ -72,7 +72,7 @@ namespace Tp02BaseDonnees
                   Application.DoEvents();
                   break;
           }
-          GetQuestion("P");
+         
       }
 
       private void SetCatName(int catpiger)
@@ -156,7 +156,7 @@ namespace Tp02BaseDonnees
         Btn_A.Text = GetReponse(Code+LeRand + "A");
         Btn_B.Text = GetReponse(Code+LeRand + "B");
         Btn_C.Text = GetReponse(Code+LeRand + "C");
-        Btn_D.Text = GetReponse(Code + LeRand + "D");
+        Btn_D.Text = GetReponse(Code+LeRand + "D");
 
       }
 
@@ -172,7 +172,7 @@ namespace Tp02BaseDonnees
       private int  GetRand()
       {
          Random rand = new Random();
-         return rand.Next(1, 3);
+         return rand.Next(1, 1);
       }
       private void RepondreForm_Load(object sender, EventArgs e)
       {
