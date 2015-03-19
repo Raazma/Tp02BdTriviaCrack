@@ -13,7 +13,6 @@ namespace Tp02BaseDonnees
 {
    public partial class RepondreForm : Form
    {
-       bool bonneReponse = false;
        OracleConnection Conn;
        DataSet LesQuestion = new DataSet();
        String[] Alias;      
