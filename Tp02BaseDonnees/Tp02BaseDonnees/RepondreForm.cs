@@ -16,15 +16,19 @@ namespace Tp02BaseDonnees
        bool bonneReponse = false;
        OracleConnection Conn;
        DataSet LesQuestion = new DataSet();
-       string Alias;
+       String[] Alias;      
        int NumPartie;
        string Categorie;
        string[] numQuestion = new string[4];
-      public RepondreForm(int catPiger , OracleConnection con)
+       int tour;
+      public RepondreForm(int catPiger , OracleConnection con , String[] Alias,int NumPartie , int tour)
       {
          InitializeComponent();
          this.Conn = con;
          SetCat(catPiger);
+         this.Alias = Alias;
+         this.NumPartie = NumPartie;
+         this.tour = tour;
       }
       private void SetCat(int catpiger)
       {
@@ -39,31 +43,37 @@ namespace Tp02BaseDonnees
               case 1:
                   Pn_couleur.BackColor = Color.Blue;
                   GetQuestion("B");
+                  Categorie = "B";
                   Application.DoEvents();
                   break;
               case 2:
                   Pn_couleur.BackColor = Color.Green;
                   GetQuestion("V");
+                  Categorie = "V";
                   Application.DoEvents();
                   break;
               case 3:
                   Pn_couleur.BackColor = Color.Yellow;
                  GetQuestion("J");
+                 Categorie = "J";
                   Application.DoEvents();
                   break;
               case 4:
                   Pn_couleur.BackColor = Color.Orange;
                   GetQuestion("O");
+                  Categorie = "O";
                   Application.DoEvents();
                   break;
               case 5:
                   Pn_couleur.BackColor = Color.Red;
                   GetQuestion("R");
+                  Categorie = "R";
                   Application.DoEvents();
                   break;
               case 6:
                   Pn_couleur.BackColor = Color.Pink;
                 GetQuestion("P");
+                Categorie = "P";
                   Application.DoEvents();
                   break;
               case 7:
@@ -78,7 +88,6 @@ namespace Tp02BaseDonnees
           }
          
       }
-
       private void SetCatName(int catpiger)
       {
           switch (catpiger)
@@ -144,13 +153,13 @@ namespace Tp02BaseDonnees
           comm.CommandType = CommandType.StoredProcedure;
           comm.CommandText = "GESTIONQUESTION.VerifierSiLaBonneReponse";
 
-          OracleParameter Ret = new OracleParameter("ret", OracleDbType.Char,1);
+          OracleParameter Ret = new OracleParameter("ret", OracleDbType.Int32);
           Ret.Direction = ParameterDirection.ReturnValue;
 
           OracleParameter Rep = new OracleParameter("PNumReponse", OracleDbType.Char,8);
           Rep.Direction = ParameterDirection.Input;
 
-          OracleParameter Al = new OracleParameter("PAlias", OracleDbType.Varchar2);
+          OracleParameter Al = new OracleParameter("PAlias", OracleDbType.Varchar2,20);
           Al.Direction = ParameterDirection.Input;
 
           OracleParameter Cat = new OracleParameter("PCat", OracleDbType.Char, 1);
@@ -160,7 +169,7 @@ namespace Tp02BaseDonnees
           Parti.Direction = ParameterDirection.Input;
 
           Rep.Value = rep;
-          Al.Value = Alias;
+          Al.Value = Alias[tour];
           Cat.Value = Categorie;
           Parti.Value = NumPartie;
 
@@ -172,12 +181,7 @@ namespace Tp02BaseDonnees
 
           comm.ExecuteNonQuery();
 
-          return int.Parse( Ret.Value.ToString()) == 0;
-
-           
-
-
-          
+          return int.Parse( Ret.Value.ToString()) == 0;                  
       }
       private void GetQuestion(String Code)
       {
@@ -209,11 +213,11 @@ namespace Tp02BaseDonnees
         Btn_A.Text = GetReponse(Code+LeRand + "A");
         numQuestion[0] = Code + LeRand + "A";
         Btn_B.Text = GetReponse(Code+LeRand + "B");
-        numQuestion[1] = Code + LeRand + "A";
+        numQuestion[1] = Code + LeRand + "B";
         Btn_C.Text = GetReponse(Code+LeRand + "C");
-        numQuestion[2] = Code + LeRand + "A";
+        numQuestion[2] = Code + LeRand + "C";
         Btn_D.Text = GetReponse(Code+LeRand + "D");
-        numQuestion[3] = Code + LeRand + "A";
+        numQuestion[3] = Code + LeRand + "B";
 
       }
 

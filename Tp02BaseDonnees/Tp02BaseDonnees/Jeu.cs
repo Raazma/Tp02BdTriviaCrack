@@ -16,6 +16,7 @@ namespace Tp02BaseDonnees
       int numTour = 0;
       String[] tabAlias;
       OracleConnection LaCon;
+      int NumPartie;
       public Jeu(String[] alias, int tour, OracleConnection con)
       {
          InitializeComponent();
@@ -41,7 +42,7 @@ namespace Tp02BaseDonnees
 
          if (Rcolor != 7)
          {
-            RepondreForm form = new RepondreForm(Rcolor, LaCon);
+            RepondreForm form = new RepondreForm(Rcolor, LaCon, tabAlias, NumPartie, numTour);
             this.Hide();
             form.ShowDialog();
             this.Close();
@@ -49,7 +50,7 @@ namespace Tp02BaseDonnees
          else
          {
             this.Hide();
-            ChooseCategorie form = new ChooseCategorie(LaCon);
+            ChooseCategorie form = new ChooseCategorie(LaCon, tabAlias, NumPartie, numTour);
             form.ShowDialog();
             this.Close();
          }
@@ -58,7 +59,6 @@ namespace Tp02BaseDonnees
 
       private void ColorChanger(int i)
       {
-
          switch (i)
          {
             case 1:
@@ -151,6 +151,21 @@ namespace Tp02BaseDonnees
 
          Lb_Nom.Text = "Tour De " + tabAlias[numTour];
 
+      }
+
+      private void CreateNumPartie()
+      { 
+        OracleCommand comm = new OracleCommand("GetnumGame",LaCon);
+        comm.CommandType = CommandType.StoredProcedure;
+        comm.CommandText = "GestionQuestion.StartGame";
+
+        OracleParameter Num = new OracleParameter("Num", OracleDbType.Int32);
+        Num.Direction = ParameterDirection.ReturnValue;
+
+        comm.Parameters.Add(Num);
+        comm.ExecuteNonQuery();
+        NumPartie = int.Parse(Num.Value.ToString());
+                  
       }
    }
 }
