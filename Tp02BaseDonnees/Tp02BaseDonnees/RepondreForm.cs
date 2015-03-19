@@ -126,7 +126,7 @@ namespace Tp02BaseDonnees
           Btn_A.BackColor = Continu ? Color.Green : Color.Red;
           Application.DoEvents();
           System.Threading.Thread.Sleep(1000);
-          GEstionReponse(b);
+          GEstionReponse(Continu);
           //code tableau score
           this.DialogResult = DialogResult.OK;
           this.Close();
@@ -139,7 +139,7 @@ namespace Tp02BaseDonnees
           Btn_B.BackColor = Continu ? Color.Green : Color.Red;
           Application.DoEvents();
           System.Threading.Thread.Sleep(1000);
-          GEstionReponse(b);
+          GEstionReponse(Continu);
           //code tableau score
           this.DialogResult = DialogResult.OK;
           this.Close();
@@ -151,7 +151,7 @@ namespace Tp02BaseDonnees
           Btn_C.BackColor = Continu ? Color.Green : Color.Red;
           Application.DoEvents();
           System.Threading.Thread.Sleep(1000);
-          GEstionReponse(b);
+          GEstionReponse(Continu);
           //code tableau score
           this.DialogResult = DialogResult.OK;
           this.Close();
@@ -163,7 +163,7 @@ namespace Tp02BaseDonnees
           Btn_D.BackColor = Continu ? Color.Green : Color.Red;
           Application.DoEvents();
           System.Threading.Thread.Sleep(1000);
-          GEstionReponse(b);
+          GEstionReponse(Continu);
           //code tableau score
           this.DialogResult = DialogResult.OK;
           this.Close();

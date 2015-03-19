@@ -43,9 +43,7 @@ namespace Tp02BaseDonnees
 
       private void Btn_Continue_Click(object sender, EventArgs e)
       {
-         Jeu form = new Jeu(alias, nouveauTour, conn);
-         this.Hide();
-         form.ShowDialog();
+         
          this.Close();
       }
 
