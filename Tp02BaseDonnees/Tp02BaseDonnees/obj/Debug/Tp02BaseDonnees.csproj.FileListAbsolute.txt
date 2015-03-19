@@ -70,3 +70,21 @@ C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02B
 C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Properties.Resources.resources
 C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.RepondreForm.resources
 C:\Users\Razma\Documents\Base de donées\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.csproj.GenerateResource.Cache
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Tp02BaseDonnees.exe.config
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.exe
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.pdb
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Tp02BaseDonnees.exe
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Tp02BaseDonnees.pdb
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.csprojResolveAssemblyReference.cache
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.AliasForm.resources
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.ChooseCategorie.resources
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.CompteExistant.resources
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.FormAjoutQuestion.resources
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.FormScoreF.resources
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.FormScoreJ.resources
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Jeu.resources
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Menu.resources
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.Properties.Resources.resources
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.RepondreForm.resources
+C:\Users\Francis\Documents\Gestion BD\Tp02BdTriviaCrack\Tp02BaseDonnees\Tp02BaseDonnees\obj\Debug\Tp02BaseDonnees.csproj.GenerateResource.Cache
