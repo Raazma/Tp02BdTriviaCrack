@@ -21,6 +21,7 @@ namespace Tp02BaseDonnees
        string Categorie;
        string[] numQuestion = new string[4];
        int tour;
+       public bool Continu { get; set; }
       public RepondreForm(int catPiger , OracleConnection con , String[] Alias,int NumPartie , int tour)
       {
          InitializeComponent();
@@ -122,30 +123,47 @@ namespace Tp02BaseDonnees
       }
       private void Btn_A_Click(object sender, EventArgs e)
       {
-          Btn_A.BackColor = Validate(numQuestion[0]) ? Color.Green : Color.Red;
+          Continu = Validate(numQuestion[0]);
+          Btn_A.BackColor = Continu ? Color.Green : Color.Red;
           Application.DoEvents();
           System.Threading.Thread.Sleep(1000);
+          //code tableau score
+          this.DialogResult = DialogResult.OK;
+          this.Close();
+
       }
 
       private void Btn_B_Click(object sender, EventArgs e)
       {
-          Btn_B.BackColor = Validate(numQuestion[1]) ? Color.Green : Color.Red;
+          Continu = Validate(numQuestion[1]);
+          Btn_B.BackColor = Continu ? Color.Green : Color.Red;
           Application.DoEvents();
           System.Threading.Thread.Sleep(1000);
+          //code tableau score
+          this.DialogResult = DialogResult.OK;
+          this.Close();
       }
 
       private void Btn_C_Click(object sender, EventArgs e)
       {
-          Btn_C.BackColor = Validate(numQuestion[2]) ? Color.Green : Color.Red;
+          Continu = Validate(numQuestion[2]);
+          Btn_C.BackColor = Continu ? Color.Green : Color.Red;
           Application.DoEvents();
           System.Threading.Thread.Sleep(1000);
+          //code tableau score
+          this.DialogResult = DialogResult.OK;
+          this.Close();
       }
 
       private void Btn_D_Click(object sender, EventArgs e)
       {
-          Btn_D.BackColor = Validate(numQuestion[3]) ? Color.Green : Color.Red;
+          Continu = Validate(numQuestion[3]);
+          Btn_D.BackColor = Continu ? Color.Green : Color.Red;
           Application.DoEvents();
           System.Threading.Thread.Sleep(1000);
+          //code tableau score
+          this.DialogResult = DialogResult.OK;
+          this.Close();
       }
        private bool Validate(string rep)
       {

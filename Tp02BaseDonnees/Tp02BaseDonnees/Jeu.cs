@@ -24,7 +24,23 @@ namespace Tp02BaseDonnees
          numTour = tour;
          LaCon = con;
          AfficherAlias();
+         NumPartie = generateGameId();
       }
+       private int generateGameId()
+      {
+          OracleCommand comm = new OracleCommand("StartGame", LaCon);
+          comm.CommandType = CommandType.StoredProcedure;
+          comm.CommandText = "GESTIONQUESTION.StartGame";
+
+          OracleParameter Ret = new OracleParameter("ret", OracleDbType.Int32);
+          Ret.Direction = ParameterDirection.ReturnValue;
+
+          comm.Parameters.Add(Ret);
+         
+          comm.ExecuteNonQuery();
+          return int.Parse(Ret.Value.ToString());
+      }
+       
 
       private void Btn_Spin_Click(object sender, EventArgs e)
       {
@@ -40,20 +56,28 @@ namespace Tp02BaseDonnees
 
          System.Threading.Thread.Sleep(1000);
 
-         if (Rcolor != 7)
+         if (Rcolor == 7)
          {
-            RepondreForm form = new RepondreForm(Rcolor, LaCon, tabAlias, NumPartie, numTour);
-            this.Hide();
-            form.ShowDialog();
+           this.Hide();
+            ChooseCategorie ChoixCat = new ChooseCategorie();
+            if(ChoixCat.ShowDialog()==DialogResult.OK)
+                Rcolor=ChoixCat.choix;
             this.Close();
          }
-         else
-         {
-            this.Hide();
-            ChooseCategorie form = new ChooseCategorie(LaCon, tabAlias, NumPartie, numTour);
-            form.ShowDialog();
-            this.Close();
-         }
+        RepondreForm Question = new RepondreForm(Rcolor, LaCon, tabAlias, NumPartie, numTour);
+        this.Hide();
+        if(Question.ShowDialog()==DialogResult.OK)
+            if(!Question.Continu)
+            {
+                if (numTour + 1 >= tabAlias.Length)
+                    numTour = -1;
+                numTour++;
+            }
+          //if(
+        AfficherAlias();       
+
+        this.Show();
+         
 
       }
 

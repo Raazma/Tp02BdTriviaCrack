@@ -13,67 +13,58 @@ namespace Tp02BaseDonnees
 {
     public partial class ChooseCategorie : Form
     {
-       OracleConnection Lacon;
-       String[] alias;
-       int NumPartie;
-       int tour;
-       public ChooseCategorie(OracleConnection con,String[] alias , int NumPartie, int tour)
+        OracleConnection Lacon;
+
+        public int choix { get; set; }
+        public ChooseCategorie()
         {
             InitializeComponent();
-            Lacon = con;
-            this.alias = alias;
-            this.NumPartie = NumPartie;
-            this.tour = tour;
+
         }
 
-      
+
 
         private void Btn_Bleu_Click(object sender, EventArgs e)
         {
-           RepondreForm form = new RepondreForm(1, Lacon,alias,NumPartie,tour);
-            this.Hide();
-            form.ShowDialog();
+            choix = 1;
+            this.DialogResult = DialogResult.OK;
             this.Close();
+
         }
 
         private void Btn_Green_Click(object sender, EventArgs e)
         {
-           RepondreForm form = new RepondreForm(2, Lacon, alias, NumPartie, tour);
-            this.Hide();
-            form.ShowDialog();
+            choix = 2;
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
         private void Btn_Yellow_Click(object sender, EventArgs e)
         {
 
-           RepondreForm form = new RepondreForm(3, Lacon, alias, NumPartie, tour);
-            this.Hide();
-            form.ShowDialog();
+            choix = 3;
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
         private void Btn_Orange_Click(object sender, EventArgs e)
         {
-           RepondreForm form = new RepondreForm(4, Lacon, alias, NumPartie, tour);
-            this.Hide();
-            form.ShowDialog();
+            choix = 4;
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
         private void Btn_red_Click(object sender, EventArgs e)
         {
-           RepondreForm form = new RepondreForm(5, Lacon, alias, NumPartie, tour);
-            this.Hide();
-            form.ShowDialog();
+            choix = 5;
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
         private void Btn_Pink_Click(object sender, EventArgs e)
         {
-           RepondreForm form = new RepondreForm(6, Lacon, alias, NumPartie, tour);
-            this.Hide();
-            form.ShowDialog();
+            choix = 6;
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
     }
