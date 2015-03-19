@@ -16,6 +16,10 @@ namespace Tp02BaseDonnees
        bool bonneReponse = false;
        OracleConnection Conn;
        DataSet LesQuestion = new DataSet();
+       string Alias;
+       int NumPartie;
+       string Categorie;
+       string[] numQuestion = new string[4];
       public RepondreForm(int catPiger , OracleConnection con)
       {
          InitializeComponent();
@@ -109,22 +113,71 @@ namespace Tp02BaseDonnees
       }
       private void Btn_A_Click(object sender, EventArgs e)
       {
-
+          Btn_A.BackColor = Validate(numQuestion[0]) ? Color.Green : Color.Red;
+          Application.DoEvents();
+          System.Threading.Thread.Sleep(1000);
       }
 
       private void Btn_B_Click(object sender, EventArgs e)
       {
-
+          Btn_B.BackColor = Validate(numQuestion[1]) ? Color.Green : Color.Red;
+          Application.DoEvents();
+          System.Threading.Thread.Sleep(1000);
       }
 
       private void Btn_C_Click(object sender, EventArgs e)
       {
-
+          Btn_C.BackColor = Validate(numQuestion[2]) ? Color.Green : Color.Red;
+          Application.DoEvents();
+          System.Threading.Thread.Sleep(1000);
       }
 
       private void Btn_D_Click(object sender, EventArgs e)
       {
+          Btn_D.BackColor = Validate(numQuestion[3]) ? Color.Green : Color.Red;
+          Application.DoEvents();
+          System.Threading.Thread.Sleep(1000);
+      }
+       private bool Validate(string rep)
+      {
+          OracleCommand comm = new OracleCommand("GetQuestion", Conn);
+          comm.CommandType = CommandType.StoredProcedure;
+          comm.CommandText = "GESTIONQUESTION.VerifierSiLaBonneReponse";
 
+          OracleParameter Ret = new OracleParameter("ret", OracleDbType.Char,1);
+          Ret.Direction = ParameterDirection.ReturnValue;
+
+          OracleParameter Rep = new OracleParameter("PNumReponse", OracleDbType.Char,8);
+          Rep.Direction = ParameterDirection.Input;
+
+          OracleParameter Al = new OracleParameter("PAlias", OracleDbType.Varchar2);
+          Al.Direction = ParameterDirection.Input;
+
+          OracleParameter Cat = new OracleParameter("PCat", OracleDbType.Char, 1);
+          Cat.Direction = ParameterDirection.Input;
+
+          OracleParameter Parti = new OracleParameter("PParti", OracleDbType.Int32);
+          Parti.Direction = ParameterDirection.Input;
+
+          Rep.Value = rep;
+          Al.Value = Alias;
+          Cat.Value = Categorie;
+          Parti.Value = NumPartie;
+
+          comm.Parameters.Add(Ret);
+          comm.Parameters.Add(Rep);
+          comm.Parameters.Add(Al);
+          comm.Parameters.Add(Cat);
+          comm.Parameters.Add(Parti);
+
+          comm.ExecuteNonQuery();
+
+          return int.Parse( Ret.Value.ToString()) == 0;
+
+           
+
+
+          
       }
       private void GetQuestion(String Code)
       {
@@ -154,9 +207,13 @@ namespace Tp02BaseDonnees
          BindInfo();
 
         Btn_A.Text = GetReponse(Code+LeRand + "A");
+        numQuestion[0] = Code + LeRand + "A";
         Btn_B.Text = GetReponse(Code+LeRand + "B");
+        numQuestion[1] = Code + LeRand + "A";
         Btn_C.Text = GetReponse(Code+LeRand + "C");
+        numQuestion[2] = Code + LeRand + "A";
         Btn_D.Text = GetReponse(Code+LeRand + "D");
+        numQuestion[3] = Code + LeRand + "A";
 
       }
 
