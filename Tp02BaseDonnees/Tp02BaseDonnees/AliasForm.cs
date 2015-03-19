@@ -35,12 +35,14 @@ namespace Tp02BaseDonnees
       }
       private void Btn_Login_Click(object sender, EventArgs e)
       {
-          CompteExistant form = new CompteExistant();
+          CompteExistant form = new CompteExistant(Conn);
           this.Hide();
           form.ShowDialog();
           if (form.DialogResult == DialogResult.OK)
           {
-             Name = form.Name;           
+             Name = form.Name;
+             this.DialogResult = DialogResult.OK;
+             this.Close();
           }
           else
           {
