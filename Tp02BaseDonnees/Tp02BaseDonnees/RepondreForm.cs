@@ -122,30 +122,38 @@ namespace Tp02BaseDonnees
       }
       private void Btn_A_Click(object sender, EventArgs e)
       {
-          Btn_A.BackColor = Validate(numQuestion[0]) ? Color.Green : Color.Red;
+         bool b;
+          Btn_A.BackColor = (b=Validate(numQuestion[0])) ? Color.Green : Color.Red;
           Application.DoEvents();
           System.Threading.Thread.Sleep(1000);
+          GEstionReponse(b);
       }
 
       private void Btn_B_Click(object sender, EventArgs e)
       {
-          Btn_B.BackColor = Validate(numQuestion[1]) ? Color.Green : Color.Red;
+         bool b;
+         Btn_B.BackColor = (b=Validate(numQuestion[1])) ? Color.Green : Color.Red;
           Application.DoEvents();
           System.Threading.Thread.Sleep(1000);
+          GEstionReponse(b);
       }
 
       private void Btn_C_Click(object sender, EventArgs e)
       {
-          Btn_C.BackColor = Validate(numQuestion[2]) ? Color.Green : Color.Red;
+         bool b;
+          Btn_C.BackColor = (b=Validate(numQuestion[2])) ? Color.Green : Color.Red;
           Application.DoEvents();
           System.Threading.Thread.Sleep(1000);
+          GEstionReponse(b);
       }
 
       private void Btn_D_Click(object sender, EventArgs e)
       {
-          Btn_D.BackColor = Validate(numQuestion[3]) ? Color.Green : Color.Red;
+         bool b;
+          Btn_D.BackColor = (b=Validate(numQuestion[3])) ? Color.Green : Color.Red;
           Application.DoEvents();
           System.Threading.Thread.Sleep(1000);
+          GEstionReponse(b);
       }
        private bool Validate(string rep)
       {
@@ -217,8 +225,7 @@ namespace Tp02BaseDonnees
         Btn_C.Text = GetReponse(Code+LeRand + "C");
         numQuestion[2] = Code + LeRand + "C";
         Btn_D.Text = GetReponse(Code+LeRand + "D");
-        numQuestion[3] = Code + LeRand + "B";
-
+        numQuestion[3] = Code + LeRand + "D";
       }
 
       private void BindInfo()
@@ -260,6 +267,24 @@ namespace Tp02BaseDonnees
          return Rep.Value.ToString();
         
       }
-
+      private void GEstionReponse(bool b)
+      { 
+      
+       if(b)
+       {
+          FormScoreJ form = new FormScoreJ(Alias,tour,tour,true,Conn);
+          this.Hide();
+          form.ShowDialog();
+          this.Close();
+       }
+       else
+       {
+          FormScoreJ form = new FormScoreJ(Alias, tour, tour++, false,Conn);
+          this.Hide();
+          form.ShowDialog();
+          this.Close();
+       }
+      
+      }
    }
 }

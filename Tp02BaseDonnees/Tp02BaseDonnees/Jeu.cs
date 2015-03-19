@@ -167,6 +167,11 @@ namespace Tp02BaseDonnees
         NumPartie = int.Parse(Num.Value.ToString());
                   
       }
+
+      private void Jeu_Load(object sender, EventArgs e)
+      {
+
+      }
    }
 }
 
