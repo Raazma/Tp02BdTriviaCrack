@@ -194,7 +194,10 @@ namespace Tp02BaseDonnees
          comm.Parameters.Add(Rep);
          comm.Parameters.Add(CodeRep);
 
-         return Rep.ToString();
+         comm.ExecuteNonQuery();
+
+         return Rep.Value.ToString();
+         //return "ALLo";
       }
 
    }
