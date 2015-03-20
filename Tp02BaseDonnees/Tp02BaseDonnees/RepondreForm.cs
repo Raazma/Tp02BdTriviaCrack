@@ -285,14 +285,14 @@ namespace Tp02BaseDonnees
       
        if(b)
        {
-          FormScoreJ form = new FormScoreJ(Alias,tour,tour,true,Conn);
+          FormScoreJ form = new FormScoreJ(Alias, tour, NumPartie, true, Conn);
           this.Hide();
           form.ShowDialog();
           this.Close();
        }
        else
        {
-          FormScoreJ form = new FormScoreJ(Alias, tour, tour++, false,Conn);
+          FormScoreJ form = new FormScoreJ(Alias, tour, NumPartie, false, Conn);
           this.Hide();
           form.ShowDialog();
           this.Close();
