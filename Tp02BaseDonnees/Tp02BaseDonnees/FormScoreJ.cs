@@ -24,13 +24,14 @@ namespace Tp02BaseDonnees
       public FormScoreJ(String[] alias,int tourA, int numPartie , bool BonneRep , OracleConnection conn)
       {
          InitializeComponent();
-         SetButtonText();
+      
          this.conn = conn;
          this.alias = alias;
          tourActuelle = tourA;
          this.numPartie =  numPartie;
          this.BonneRep = BonneRep;
          AjoutScore();
+         SetButtonText();
       }
 
       private void FormScoreJ_Load(object sender, EventArgs e)

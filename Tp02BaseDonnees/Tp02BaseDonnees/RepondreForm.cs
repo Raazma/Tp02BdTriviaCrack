@@ -253,7 +253,7 @@ namespace Tp02BaseDonnees
       private int  GetRand()
       {
          Random rand = new Random();
-         return rand.Next(1, 1);
+         return rand.Next(1, 11);
       }
       private void RepondreForm_Load(object sender, EventArgs e)
       {
